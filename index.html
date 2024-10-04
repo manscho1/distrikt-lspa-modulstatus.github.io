@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulstatus - LSPD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modulstatus - LSPD</h1>
+    </header>
+
+    <div class="container" id="addUserContainer" style="display: none;">
+        <h2>Neuen Benutzer hinzufügen (nur Admins)</h2>
+        <input type="text" id="newUserPANumber" placeholder="PA-Dienstnummer eingeben">
+        <input type="text" id="newUserName" placeholder="Name eingeben">
+        <button id="addUserButton">Benutzer hinzufügen</button>
+    </div>
+
+    <div class="container search-container">
+        <h2>Suche nach Benutzer</h2>
+        <input type="text" id="searchInput" placeholder="Namen eingeben">
+        <button id="searchButton">Suchen</button>
+        <div id="results"></div>
+    </div>
+
+    <div class="container">
+        <h2>Aktuelle Mitglieder</h2>
+        <div id="allUsers"></div> <!-- Alle Mitglieder aufgelistet -->
+    </div>
+
+    <div class="container">
+        <h2>Module</h2>
+        <div id="modules"></div> <!-- Module für ausgewählte Mitglieder -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
